@@ -1,3 +1,8 @@
 /data
 /data2
 data.zip
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
