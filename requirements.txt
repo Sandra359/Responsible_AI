@@ -7,3 +7,9 @@ matplotlib
 seaborn
 jupyter
 ipykernel
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.6
+torch>=2.2
+transformers>=4.40
+umap-learn>=0.5

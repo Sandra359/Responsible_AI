@@ -6,3 +6,6 @@ data.zip
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+/notebooks/project3/data
+/notebooks/project1/data
+/notebooks/project1/data2
