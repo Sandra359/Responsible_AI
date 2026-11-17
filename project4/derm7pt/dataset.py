@@ -235,8 +235,9 @@ class Derm7PtDataset(object):
     @staticmethod
     def get_dict_labels(df_column_names):
 
-        label_names = df_column_names.unique()
-        label_names.sort()
+        # sorted() works for both numpy arrays and pandas ExtensionArrays
+        # (pandas >= 3 returns a StringArray, which has no in-place .sort()).
+        label_names = sorted(df_column_names.unique())
         label_dict = {}
         for label_idx, label_name in enumerate(label_names):
             label_dict[label_name] = label_idx
